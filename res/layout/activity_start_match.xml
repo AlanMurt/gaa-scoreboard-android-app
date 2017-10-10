@@ -1,0 +1,281 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="me.example.alansproject.StartMatch"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/scores"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:text="@string/scores"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/getTeamA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="200dp"
+        android:text="Team A"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/getTeamB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="200dp"
+        android:text="Team B"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/teamAMinusGoalButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/white"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/teamAMinusPointButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="310dp"
+        android:background="@color/white"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/teamBMinusGoalButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/white"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/teamBMinusPointButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="310dp"
+        android:background="@color/white"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/teamAGoalButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/white"
+        android:text="@string/goal" />
+
+    <Button
+        android:id="@+id/teamBGoalButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="250dp"
+        android:background="@color/white"
+        android:text="@string/goal" />
+
+    <Button
+        android:id="@+id/teamAPointButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="310dp"
+        android:background="@color/white"
+        android:text="@string/point" />
+
+    <Button
+        android:id="@+id/teamBPointButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="310dp"
+        android:background="@color/white"
+        android:text="@string/point" />
+
+    <Button
+        android:id="@+id/setupButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="370dp"
+        android:background="@color/white"
+        android:text="@string/setup" />
+
+    <Button
+        android:id="@+id/halfTimeButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="370dp"
+        android:background="@color/white"
+        android:text="@string/halfTime" />
+
+    <Button
+        android:id="@+id/startMatchButton"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="@string/startMatchButton"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/getTeamAAgain"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/getTeamA"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/getTeamBAgain"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/getTeamB"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/getTeamAGoals"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/getTeamBGoals"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="60dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:visibility="invisible" />
+
+ <!--    <Button
+        android:id="@+id/endGameButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="370dp"
+        android:background="@color/white"
+        android:text="@string/endGameButton"
+        android:visibility="invisible" /> -->
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="115dp"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/getTeamAPoints"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/getTeamBPoints"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="60dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/teamAScoreDash"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="20dp"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/teamBScoreDash"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="60dp"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/yellow"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/endGameButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="370dp"
+        android:background="@color/white"
+        android:text="@string/endGameButton"
+        android:visibility="invisible" />
+
+</FrameLayout>
+

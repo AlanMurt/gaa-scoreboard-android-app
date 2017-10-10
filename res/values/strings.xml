@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Alans Project</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#33cc33</color>
+    <color name="grey">#999999</color><color name="yellow">#ffff66</color>
+
+    <string name="setTeams">Set Teams</string>
+    <string name="setTeamA">Team A</string>
+    <string name="setTeamB">Team B</string>
+    <string name="location">Location</string>
+    <string name="setHomeTeam">Home Team</string>
+    <string name="setTimer">Timer (Green for yes or red for no)</string>
+    <string name="timerButton"> </string>
+    <string name="continueButton">Continue</string>
+    <string name="title_activity_start_match">StartMatch</string>
+    <string name="startMatchButton">Start Match</string>
+    <string name="scores">Scores</string>
+    <string name="getTeamA">Team A</string>
+    <string name="getTeamB">Team B</string>
+    <string name="minus">-</string>
+    <string name="goal">Goal</string>
+    <string name="point">Point</string>
+    <string name="setup">Setup</string>
+    <string name="halfTime">Half Time</string>
+    
+    <string name="getTeamAScore">1-10</string>
+    <string name="getTeamBScore">0-5</string>
+    <string name="endGameButton">End Game</string>
+    <string name="getHomeTeam">Home Team</string>
+
+</resources>
